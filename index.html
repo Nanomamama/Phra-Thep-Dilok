@@ -136,13 +136,13 @@
     .hero-photo {
       position: absolute;
       inset: 0 0 0 35%;
-      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0yMG3d1uOrQiaKsiHPr-_l2E95ly6u1kZxBKL4gg49ZC_wgViDQMA62M&s=10") center 48% / cover no-repeat;
+      background: url("./image/596809636_1220477436849121_8199548669513127813_n.jpg") center 48% / cover no-repeat;
       opacity: .88;
       transform: scale(1.025);
       animation: photo-arrive 1.4s cubic-bezier(.2, .7, .2, 1) both;
     }
 
-    .hero::after {
+    /* .hero::after {
       content: "";
       position: absolute;
       width: min(46vw, 640px);
@@ -154,7 +154,7 @@
       border-radius: 50%;
       z-index: 2;
       pointer-events: none;
-    }
+    } */
 
     .hero-inner {
       width: min(1280px, calc(100% - 64px));
@@ -321,6 +321,31 @@
     .bio-copy strong {
       color: var(--forest);
       font-weight: 600;
+    }
+
+    .bio-photo {
+      float: right;
+      width: clamp(126px, 17vw, 170px);
+      margin: .25rem 0 1rem 1.7rem;
+      padding: 7px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .bio-photo img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .bio-photo figcaption {
+      padding-top: .45rem;
+      color: var(--muted);
+      font-size: .7rem;
+      line-height: 1.5;
+      text-align: center;
     }
 
     .gallery-section {
@@ -760,6 +785,12 @@
         max-width: 310px;
       }
 
+      .bio-photo {
+        float: none;
+        width: 132px;
+        margin: .25rem 0 1.1rem auto;
+      }
+
       .timeline {
         grid-template-columns: 1fr 1fr;
         row-gap: 1.2rem;
@@ -870,7 +901,7 @@
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="page-title">
-      <div class="hero-photo" role="img" aria-label="บรรยากาศบริเวณวัดปทุมวนาราม"></div>
+      <div class="hero-photo" role="img" aria-label="พระเถระประทับนั่งร่วมพิธี ท่ามกลางคณะสงฆ์"></div>
       <div class="hero-inner">
         <div class="hero-copy">
           <p class="eyebrow">พระเถระฝ่ายธรรมยุติกนิกาย</p>
@@ -884,9 +915,8 @@
           </div>
         </div>
       </div>
-      <small class="hero-caption">ภาพวัดปทุมวนาราม · <a
-          href="https://thailandtourismdirectory.go.th/th/attraction/103540" target="_blank" rel="noreferrer">Thailand
-          Tourism Directory</a></small>
+      <small class="hero-caption">ภาพประกอบ · <a
+          href="image/596809636_1220477436849121_8199548669513127813_n.jpg" target="_blank" rel="noreferrer">เปิดไฟล์ภาพ</a></small>
     </section>
 
     <section class="section" id="biography">
@@ -899,6 +929,10 @@
         <div class="bio-copy reveal">
           <p class="section-kicker">ประวัติโดยย่อ</p>
           <h2 class="section-title">จากวัชรพันธ์ ลาเสือ<br>สู่พระเถระผู้รับภารกิจคณะสงฆ์</h2>
+          <figure class="bio-photo">
+            <img src="image/597375599_1220478670182331_7960576377103165698_n.jpg" alt="พระเทพดิลกประทับนั่งร่วมพิธี ท่ามกลางคณะสงฆ์" loading="lazy" decoding="async">
+            <figcaption>พระเทพดิลก (วัชรพันธ์ นนฺทิโย)</figcaption>
+          </figure>
           <p class="lead">พระเทพดิลก มีนามเดิมว่า <strong>วัชรพันธ์ ลาเสือ</strong> ฉายา <strong>นนฺทิโย</strong>
             เป็นพระราชาคณะชั้นเทพฝ่ายธรรมยุติกนิกาย และเป็นที่เคารพของคณะศิษยานุศิษย์ในนามหลวงปู่วัชรพันธ์</p>
           <p class="lead">ท่านพำนักและปฏิบัติศาสนกิจ ณ วัดปทุมวนารามราชวรวิหาร กรุงเทพมหานคร
@@ -914,19 +948,18 @@
             <p class="section-kicker">ภาพประวัติ</p>
             <h2 class="section-title" id="gallery-title">ภาพหลวงปู่วัชรพันธ์</h2>
           </div>
-          <p class="gallery-note">เลือกชมภาพที่ส่งมาได้เต็มขนาด แตะหรือคลิกที่ภาพเพื่อเปิดต้นฉบับ</p>
         </div>
         <div class="photo-grid">
-          <a class="photo-card reveal" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZU3J-mJvoXx1_LzwMsalB5s6KnYQNJsWoKYbvgux-phsZpZINmvYAeHc&amp;s=10" target="_blank" rel="noreferrer" aria-label="เปิดภาพที่ 1 เต็มขนาด">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZU3J-mJvoXx1_LzwMsalB5s6KnYQNJsWoKYbvgux-phsZpZINmvYAeHc&amp;s=10" alt="ภาพประกอบประวัติพระเทพดิลก ภาพที่ 1" loading="lazy" decoding="async">
+          <a class="photo-card reveal" href="image/images.jpg" target="_blank" rel="noreferrer" aria-label="เปิดไฟล์ภาพที่ 1">
+            <img src="image/images.jpg" alt="พระเทพดิลกประทับถือพัดยศ" loading="lazy" decoding="async">
             <span class="photo-caption"><strong>พระเทพดิลก</strong><span class="photo-number">ภาพที่ ๑</span></span>
           </a>
-          <a class="photo-card reveal" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OFxcnc_znpgjEig-veBHpjmGrg8CAq-gx-Dias76OM4556fiJIU1Ttk&amp;s=10" target="_blank" rel="noreferrer" aria-label="เปิดภาพที่ 2 เต็มขนาด">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7OFxcnc_znpgjEig-veBHpjmGrg8CAq-gx-Dias76OM4556fiJIU1Ttk&amp;s=10" alt="ภาพประกอบประวัติพระเทพดิลก ภาพที่ 2" loading="lazy" decoding="async">
+          <a class="photo-card reveal" href="image/images%20(1).jpg" target="_blank" rel="noreferrer" aria-label="เปิดไฟล์ภาพที่ 2">
+            <img src="image/images%20(1).jpg" alt="พระเทพดิลกประทับนั่งข้างพัดยศ" loading="lazy" decoding="async">
             <span class="photo-caption"><strong>พระเทพดิลก</strong><span class="photo-number">ภาพที่ ๒</span></span>
           </a>
-          <a class="photo-card reveal" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXcTlPZVhuc3mkvFhBnW82fM_UYAtDHBtgXPPtQFp6vyKQjt5x4AjwH0&amp;s=10" target="_blank" rel="noreferrer" aria-label="เปิดภาพที่ 3 เต็มขนาด">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXcTlPZVhuc3mkvFhBnW82fM_UYAtDHBtgXPPtQFp6vyKQjt5x4AjwH0&amp;s=10" alt="ภาพประกอบประวัติพระเทพดิลก ภาพที่ 3" loading="lazy" decoding="async">
+          <a class="photo-card reveal" href="image/images%20(2).jpg" target="_blank" rel="noreferrer" aria-label="เปิดไฟล์ภาพที่ 3">
+            <img src="image/images%20(2).jpg" alt="พระเทพดิลกประทับนั่งในพิธีหน้าพระพุทธรูป" loading="lazy" decoding="async">
             <span class="photo-caption"><strong>พระเทพดิลก</strong><span class="photo-number">ภาพที่ ๓</span></span>
           </a>
         </div>
@@ -1004,8 +1037,6 @@
             target="_blank" rel="noreferrer">คู่มือบัณฑิตศึกษา มมร.</a>
           <a href="https://ret.onab.go.th/th/content/category/detail/id/9/iid/82893" target="_blank"
             rel="noreferrer">สำนักงานพระพุทธศาสนาจังหวัดร้อยเอ็ด</a>
-          <a href="https://thailandtourismdirectory.go.th/th/attraction/103540" target="_blank"
-            rel="noreferrer">Thailand Tourism Directory · ภาพวัด</a>
         </div>
       </div>
     </section>
